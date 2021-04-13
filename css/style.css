@@ -1,0 +1,19 @@
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+.logo{
+    width: 95px;
+    height: 95px;
+    border: 2px solid red;
+}
+
+/* Navigation Bar  */
+#navBar{
+    
+}
