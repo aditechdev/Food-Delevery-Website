@@ -8,7 +8,8 @@
       Best Online Food delivery Services In India | MyOnlineMeal.com
     </title>
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <link
@@ -24,10 +25,10 @@
       <ul>
         <!-- to get 5 similar kind of this  -->
         <!-- li.item{<a></a>}*5  -->
-        <li class="item"><a href="#">Home</a></li>
-        <li class="item"><a href="#">Services</a></li>
-        <li class="item"><a href="#">About Us</a></li>
-        <li class="item"><a href="#">Contact Us</a></li>
+        <li class="item"><a href="#home">Home</a></li>
+        <li class="item"><a href="#services-container">Services</a></li>
+        <li class="item"><a href="#client-section">Our Clients</a></li>
+        <li class="item"><a href="#contact">Contact Us</a></li>
       </ul>
     </nav>
 
@@ -46,9 +47,8 @@
       <button class="btn">Order Now</button>
     </section>
 
-    <section class="services-container">
+    <section id="services-container">
       <h1 class="h-primary center">Our Services</h1>
-
       <div id="services">
         <div class="box">
           <img src="img/food-catering.png" alt="Food Caterring" />
@@ -99,17 +99,52 @@
     </section>
 
     <section id="contact">
-        <h1 class="h-primary-class center">
-            Contact Us
-        </h1>
-        <div class="contact-box">
-            <form action="">
-                <div class="form-group">
-                    <label for="name">Name: </label>
-                    <input type="text" name="name" id="name" placeholder="Enter Your Name: ">
-                </div>
-            </form>
-        </div>
+      <h1 class="h-primary-class center">Contact Us</h1>
+      <div id="contact-box">
+        <form action="">
+          <div class="form-group">
+            <label for="name">Name: </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Your Name: "
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your email: "
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone No: </label>
+            <input
+              type="phone"
+              name="phone"
+              id="phone"
+              placeholder="Enter Your Phone: "
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message: </label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </form>
+      </div>
     </section>
+    <footer>
+      <div class="center">
+        Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+      </div>
+    </footer>
   </body>
 </html>
